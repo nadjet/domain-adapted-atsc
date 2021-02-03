@@ -1,3 +1,5 @@
+data/**
+venv/**
 finetuning_and_classification/*/
 
 # Byte-compiled / optimized / DLL files

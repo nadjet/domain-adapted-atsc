@@ -50,8 +50,7 @@ if args.large:
     max_sentences = int(10e6)  # for 10 Mio corpus
 
 nlp = spacy.load('en_core_web_sm')
-nlp.create_pipe('sentencizer')
-nlp.add_pipe('sentencizer')
+nlp.add_pipe(nlp.create_pipe('sentencizer'))
 fn = 'data/raw/review.json'
 reviews = []
 
